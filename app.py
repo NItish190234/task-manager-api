@@ -10,6 +10,8 @@ tasks = [
 @app.route("/tasks", methods=["GET"])
 def get_tasks():
     return jsonify(tasks)
+    
+print("Task Manager API Running")
 
 if __name__ == "__main__":
     app.run(debug=True)
